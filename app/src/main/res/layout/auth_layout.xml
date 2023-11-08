@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".AuthActivity">
+
+    <ImageView
+        android:layout_width="207dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/logo_vector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="302dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="@string/e_mail"
+        android:textColorHint="#A8A8A8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="362dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="@string/pass"
+        android:password="true"
+        android:textColorHint="#A8A8A8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/auth"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="512dp"
+        android:backgroundTint="#EF3A01
+"
+        android:gravity="center"
+        android:text="@string/comeIn"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/reg"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="572dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/reg"
+        android:textColor="#FF5722"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

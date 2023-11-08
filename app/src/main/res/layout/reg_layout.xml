@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="758dp"
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_width="207dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/logo_vector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAccessibility="no" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="266dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="@string/name"
+        android:textColorHint="#A8A8A8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="446dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="@string/pass"
+        android:password="true"
+        android:textColorHint="#A8A8A8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="386dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="@string/e_mail"
+        android:textColorHint="#A8A8A8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="326dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="@string/surname"
+        android:textColorHint="#A8A8A8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tooPass"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="506dp"
+        android:background="@drawable/edit_text_style"
+        android:hint="@string/tooPass"
+        android:textColorHint="#A8A8A8"
+        android:password="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/reg"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="610dp"
+        android:backgroundTint="#EF3A01"
+        android:gravity="center"
+        android:text="@string/reg1"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/auth"
+        style="@style/Widget.Material3.MaterialTimePicker.Button"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="670dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/haveAnAcc"
+        android:textColor="#FF5722"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintButtonSize" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

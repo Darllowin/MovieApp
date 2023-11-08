@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    tools:context=".MainLayoutActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="360dp"
+                android:layout_height="440dp"
+                android:src="@drawable/mainfilms"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:importantForAccessibility="no" />
+
+            <Button
+                android:id="@+id/reklamFilm"
+                style="@style/Widget.Material3.MaterialTimePicker.Button"
+                android:layout_width="128dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginTop="316dp"
+                android:backgroundTint="#EF3A01"
+                android:text="@string/look"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="456dp"
+                android:text="@string/trend"
+                android:textColor="#EF3A01"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/a"
+                android:tag="a"
+                android:layout_width="100dp"
+                android:layout_height="144dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="501dp"
+                android:src="@drawable/lucifer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/b"
+                android:tag="b"
+                android:layout_width="100dp"
+                android:layout_height="144dp"
+                android:layout_marginStart="132dp"
+                android:layout_marginTop="501dp"
+                android:src="@drawable/got"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:importantForAccessibility="no" />
+
+            <ImageButton
+                android:id="@+id/c"
+                android:tag="c"
+                android:layout_width="99dp"
+                android:layout_height="144dp"
+                android:layout_marginStart="248dp"
+                android:layout_marginTop="501dp"
+                android:src="@drawable/netflixsexeduc"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:importantForAccessibility="no" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="677dp"
+                android:text="@string/neww"
+                android:textColor="#EF3A01"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextSizeCheck" />
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="722dp"
+                android:scrollbars="none"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/secondLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageButton
+                        android:id="@+id/d"
+                        android:tag="d"
+                        android:layout_width="240dp"
+                        android:layout_height="144dp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/reasonswhy"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/e"
+                        android:tag="e"
+                        android:layout_width="240dp"
+                        android:layout_height="144dp"
+                        android:layout_marginStart="272dp"
+                        android:importantForAccessibility="no"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/walkingdead"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="112dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="898dp"
+                android:text="@string/forYou"
+                android:textColor="#EF3A01"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/f"
+                android:tag="f"
+                android:layout_width="100dp"
+                android:layout_height="144dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="943dp"
+                android:src="@drawable/westworld"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:importantForAccessibility="no" />
+
+            <ImageButton
+                android:id="@+id/g"
+                android:tag="g"
+                android:layout_width="100dp"
+                android:layout_height="144dp"
+                android:layout_marginStart="132dp"
+                android:layout_marginTop="943dp"
+                android:src="@drawable/jessica"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:importantForAccessibility="no" />
+
+            <ImageButton
+                android:id="@+id/h"
+                android:tag="h"
+                android:layout_width="99dp"
+                android:layout_height="144dp"
+                android:layout_marginStart="248dp"
+                android:layout_marginTop="943dp"
+                android:src="@drawable/constantine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:importantForAccessibility="no" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="950dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:importantForAccessibility="no" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="56dp"
+        android:background="@drawable/panelbackgound"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/imButton1"
+            android:layout_width="80dp"
+            android:layout_height="56dp"
+            android:background="#2C2C2C"
+            android:src="@drawable/action_active11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:importantForAccessibility="no" />
+
+        <ImageButton
+            android:id="@+id/imButton2"
+            android:layout_width="80dp"
+            android:layout_height="56dp"
+            android:background="#2C2C2C"
+            android:src="@drawable/action_inactive"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:importantForAccessibility="no" />
+
+        <ImageButton
+            android:id="@+id/imButton3"
+            android:layout_width="80dp"
+            android:layout_height="56dp"
+            android:background="#2C2C2C"
+            android:src="@drawable/action_inactive_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:importantForAccessibility="no" />
+
+        <ImageButton
+            android:id="@+id/imButton4"
+            android:layout_width="80dp"
+            android:layout_height="56dp"
+            android:background="#2C2C2C"
+            android:src="@drawable/action_inactive_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:importantForAccessibility="no" />
+
+        <ImageButton
+            android:id="@+id/imButton5"
+            android:layout_width="40dp"
+            android:layout_height="56dp"
+            android:background="#2C2C2C"
+            android:importantForAccessibility="no"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow_back1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
